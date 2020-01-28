@@ -1,0 +1,221 @@
+\chapter{Prototype Development}
+This chapter presents the development tools that are used for designing and creating the prototype. The chapter also explains the iterations and methods that were used while prototyping.
+
+\section{Development tools}
+\subsection{Proto.io}
+Proto.io is an application prototyping platform \cite{proto} that can can simulate everything an app can do. That includes interactive touch gestures, screen transitions and animations. It allows users to create realistic, shareable prototypes that work as a real app should and experience their prototype on the actual device.
+\subsection{ReactJS}
+ReactJS is a javascript library for building user interfaces \cite{react}. It is a flexible and efficient front end javascript library for building user interfaces\cite{react2}. ReactJS is developed by Facebook and is used by a variety of websites and applications. 
+
+\subsection{Google forms}
+Google Forms is a tool that allows collecting information from users via a personalized survey or quiz. The information is then collected and automatically connected to a spreadsheet\cite{forms}. Google forms was used to create a survey that was shared on social media, which helped gather valuable information.
+\subsection{Atom}
+Atom is the text-editor that was used to code in for this project. With atom it is possible to import packages, have multiple panes, manage packages and helps you write code faster with a smart and flexible autocomplete \cite{atom}.   
+\subsection{Github}
+Github provides software development version control using git. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project \cite{github} . 
+
+\section{Iteration Overview}
+pilot survey test 
+survey (proof of concept / data analysis?)
+wireframe ( proto.io
+expert?
+redefine
+\section{First Iteration of Research Project}
+The first design iteration started with the requirements established from the literature review and a survey conducted through social media to gather data. The survey went through two pilot studies to establish the best way to get data and was shared on Facebook. The purpose of the survey was explained in the introduction, so that the people who answered knew what they were contributing to. They were shown an example of logging exercises \ref{fig:workout log} and were explained how a likert scale works. 44 people answered the survey.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=120mm]{figures/testtest.png}
+    \caption{Example of logging a workout}
+    \label{fig:workout log}
+\end{figure}
+\subsection{The survey}
+To establish some background information on the people that were surveyed, they were asked how often they work out and whether or not they already use an activity tracker. The majority of people that answered worked out more than 10 times a month and less than 30\% answered 5 or less.
+\begin{figure}[H]%
+    \centering
+    {{\includegraphics[width=7cm]{figures/testings.png} }}%
+    \qquad
+     {{\includegraphics[width=7cm]{figures/survey2.png} }}%
+    \caption{Background information}%
+\end{figure}
+45.5\% answered that they use an activity tracker and they were also asked to list which tracker they used which can be seen in the table below. 
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |l|l| }
+  \hline
+  \multicolumn{2}{|c|}{Activity Tracker} \\
+  \hline
+Apple Watch & 2\\ 
+\hline
+Fenix & 1\\
+\hline
+Fitbit & 5\\ 
+  \hline
+  Garmin & 5 \\ 
+  \hline
+  Kadens & 1\\ 
+  \hline
+   Polar & 3\\ 
+  \hline
+   Suunto & 2\\ 
+  \hline
+\end{tabular}
+\label{tab:3}
+\caption{Survey Activity Tracker}
+\end{table}
+
+They were asked to list what kind of data they think is interesting from the activity trackers, some of the answers are shown in figure \ref{data}. Most people answered that knowing the heart rate, average heart rate and max heart rate is important. Also the amount of daily steps, distance of a run, amount of sleep and performance analysis were listed. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=120mm]{figures/puls.png}
+    \caption{Data from activity trackers}
+    \label{data}
+\end{figure}
+To get more knowledge about the surveyed people`s workout habits, they were asked if they logged their workouts seen in figure \ref{workoutlogging}. The majority answered they do not log their workouts.  From the 41.9 \% of people that log their workouts were asked if they do it after or during and 70\% of them do it after they are finished with the workout.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=120mm]{figures/loggforerduegentrening.png}
+    \caption{Workout logging}
+    \label{workoutlogging}
+\end{figure}
+To get an understanding of how people view others progress \ref{others}. They were asked if they feel extra motivated to workout by seeing friend`s progress, whether its strength progression or physical changes. 20 people answered that they agree or strongly agree. 13 answered neutral and 11 in total answered that they disagreed or strongly disagreed.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=120mm]{figures/MotivertAvAndresTrening.png}
+    \caption{Motivated from others progress}
+    \label{others}
+\end{figure}
+Since most people do not log their workouts, it is interesting to know if they would feel motivated to log their workouts if their friends could see the workout logs. However most people strongly disagree with this statement. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=120mm]{figures/MotivertTilLogging.png}
+    \caption{Motivated to log workouts if friends could see the logs}
+    \label{moti}
+\end{figure}
+
+The next question was about accountability and whether or not they would feel accountable to log their workouts if their friends could see them. The answers from figure \ref{acc} were almost identical to the motivation answers shown in figure \ref{moti} where the people mostly disagreed with the statement.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=120mm]{figures/AnsvarligLogging.png}
+    \caption{Accountability from friends to log workouts}
+    \label{acc}
+\end{figure}
+To find out if the surveyed people are interested in their friends workouts, they were asked if they were interested in friend`s progression in running, or if their friends gathered for a football game. The answers were quite mixed as shown in figure \ref{inti}, however the answers mostly disagreed with the statement. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=120mm]{figures/AndresTrening.png}
+    \caption{Interested in friends workouts and progress}
+    \label{inti}
+\end{figure}
+
+As suggested in the literature review, having common goals is important to both stay motivated and accountable. The survey asked if it would be extra motivating to have a common workout goal that they co-operate with their friends. Examples would be running 5 kilometers together, lifting weights together or daily step challenges. The answers were mostly positive as seen in figure \ref{cgs}. Only 7 answers disagreed or strongly disagreed.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=120mm]{figures/FellesMaal.png}
+    \caption{Motivation from common goals}
+    \label{cgs}
+\end{figure}
+As a follow up to the last question, the surveyed people were asked if it is motivating to compete with friends towards a common goal. Again the answers were mostly positive to the suggestion as most people strongly agreed with the statement. 
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=120mm]{figures/KonkurereVenner.png}
+    \caption{Competing with friends}
+    \label{data}
+\end{figure}
+To get an idea of how members of a group would interact with each other, they were asked if they would like to get instant notifications if a member of their group was working out. The idea here is that if a member is working out at the moment, it would motivate the rest of the group to go out and do a workout.
+As seen in figure \ref{instaN}, the answers are mostly strongly disagree or neutral. They prefer to have an asynchronous application instead of a synchronous application with push warnings or instant notifications.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=120mm]{figures/InstantNotifikasjon.png}
+    \caption{Instant notifications}
+    \label{instaN}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=120mm]{figures/FitnessInfluencer.png}
+    \caption{Testing workouts from fitness influencers}
+    \label{fitnitsinf}
+\end{figure}
+From the literature review it is suggested that some people take the role of a mentor and having mentors help people in the early stages by sharing information and knowledge. Fitness influencers are people that share exercises and workouts online on social media like Instagram and Snapchat. However the answers were negative and most people disagree that they would try the same workouts as fitness influencers share on social media. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=120mm]{figures/VennerInfluencer.png}
+    \caption{Testing workouts from friends}
+    \label{fwork}
+\end{figure}
+As a follow up to figure \ref{fitnitsinf}, it is interesting to find that people much rather prefer to copy workouts from friends. Figure \ref{fwork} shows that people would like to try a workout written by a friend.
+\subsection{Low-fidelity prototype}\label{lowfi}
+The first version of the application was created as a sketch on paper. Several iterations were drawn on paper to test different layouts and features. The sketches were focused on the functionality of creating or joining groups and how to select and share goals. There is a workout logging feature that lets users log their own workouts and look at past workouts and a feature that lets the users look at the group members workout as well. The goals are selected by the group members and will be visible in the social group member part of the application. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=120mm]{figures/testytestings.png}
+    \caption{Wireframes for the application}
+    \label{wireframe}
+\end{figure}
+Figure \ref{wireframe} shows some of the screens from the first wireframe that is created in the prototype program Proto.io. The bottom buttons on every screen are inspired from other social media applications. The user icon will go to your own workout log(the second screen) and the group of users will go to a group screen(the third screen) with the common goals and the other users workouts. The Add icon will be for adding workouts. The fourth and fifth screen shows the group screens, where the users will be able to join or create groups, select names for the group and then adding common goals for all their members.
+\subsection{Interactive prototype}
+With proto.io it is possible to add interactions and clickable buttons for the wireframes. This was used to create the first interactive low-fidelity prototype. The interactive prototype displayed the functions mentioned in section \ref{lowfi}. Instead of adding dropdown menus and clickable lists the features were presented with symbols and descriptive information to illustrate the different functions. Illustrative images were also added to improve the user experience of the low-fidelity prototype.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.25]{figures/777.png}
+    \caption{First interactive prototype with Proto.io}
+    \label{intProt}
+\end{figure}
+\subsection{Expert interview}
+Two experts were interviewed at City Sammen, a physiotherapist and researcher and a developer, both work as personal trainers online and have worked with clients in person before. There was a brief introduction of the goals and ideas of the project, then the experts were introduced to the literature review and the answers from the survey. After a semi-structured interview was done with a set of pre-defined questions about how the personal trainers work, and the development and features of the application. 
+
+The experts thought it was an interesting project and both agreed that setting personal goals and providing feedback and accountability is very important to keep improving the physical fitness of their clients. They also believed that having groups would increase the competition between the users and that it would keep the users accountable by "shaming" each other if they fell off.
+One expert requested a way of visualising the progress towards a goal, with a progress bar or showing the progression percentage. Since it is important to show the progress that the users have made. Giving positive feedback like "great work", when a user logs their workout would be beneficial for accountability. At the end of the semi-structured interview there was a discussion between the experts about notifications. One of the experts recommended that having notifications with motivating quotes and telling the users that another user just worked out could help for the competition aspect, however the other expert agreed with the survey answers and thought that very few users would approve of this functionality. One of the experts also recommended creating the functionality in ReactJS.
+
+\subsection{Proof of concept}
+After conducting the literature review and the survey it was clear that there is a demand for group functionality for exercise applications and that it requires further research. The experts also liked the idea of an application with the proposed functionality for exercise accountability and exploring more design and technology solutions.
+
+\section{Second Iteration of Research Project}
+The second iteration consisted of changing the framework to ReactJS. This was done to test the functionality with a more realistic framework than a prototyping framework. Creating a new low-fidelity interactive prototype and implementing the current functionality there. The requirements were also redefined based on the feedback from the experts. Lastly a group of usability experts performed a SUS evaluation.
+\subsection{Redefining after the expert feedback }
+After the semi-structured interview with the experts some changes were made. The prototyping framework proto.io was switched with ReactJS, as an expert recommended it and it is one of the most popular frameworks for development.  The change required some learning time. 
+The progress bar functionality for the group goals was also emphasized in this design iteration.
+
+\subsection{Focus group}
+The focus group consisted three males(A,B,C) and one female(Z), who are all close friends. They were introduced to the research and were told about the ideas from the literature review. The goal of the focus group was to get the group to discuss what features and content they would like to see and most importantly stay accountable.
+They were first asked if they use any fitness applications or if they have used any in the past. Two of them had used Fitbit and one had used Myfitnesspal. They had abandoned the applications because they were "boring", "not interesting" and the fun of the application quickly ended.
+
+They were then asked if there are any features that would make them use a social fitness application.
+\begin{itemize}
+\item A: Having long-term goals with workout programs included, the ability to make bets with friends.
+\item Z: Goals for workout frequency, general goals for working out a couple of times a week 
+\item B: Competing with friends to win prizes, where the members put in money for weekly competitions. Competitions could be going to the gym the most times, working out the longest or doing the most total weight in a week. He mentioned that the application could have GPS locations for gyms, and that it should only be possible to log workouts from the gym. He also thought that having positive feedback when you log a workout is a nice touch, and the other group members should get a notification in the application when a member has logged a workout.
+\item C Said that he exclusively works out alone and does not think that a social application would get him to log his workout or be interested in what his friends are doing.
+\end{itemize}
+
+The next part was dedicated to visualisation of the goals. They all agreed that the visualisation should be focused on the smaller goals, for instance having 10 workouts in total during a week for the group where every member has to contribute.  They mentioned that the bigger goals like working towards completing a marathon, or hitting a 100 kg bench press should be a personal goal and this could be visualised with a percentage bar. The intermediate objective goals could be visualised with check marks, using a green check mark for success and a orange check mark for in progress.
+
+For the last part of the focus group the members were shown the current mid-fidelity prototype created in React. They did a walk through of the application where they could log a workout and go through the current components that had filler content.
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.6]{figures/appenSaaLangt.png}
+    \caption{Prototype shown to the focus group}
+    \label{ReactProt}
+\end{figure}
+
+They were then asked about design preferences, they all agreed that having intuitive user interface and to stay social was the most important part.
+For the color preferences they agreed that light colors with dark text is the best option, and that it looked more professional without "aggressive screaming colors".
+\subsection{Reviewing design principles}
+
+\subsection{SUS with Usability Experts}
+
+
+
+
+
+
+\section{Third Iteration of Research Project}
+\subsection{Why I did stuff}
+\section{Fourth Iteration of Research Project}
+\subsection{Why I did stuff}

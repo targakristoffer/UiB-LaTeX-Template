@@ -3,8 +3,14 @@
 %----------------------------------------------------------------------------------------
 
 
-\documentclass[12pt,openright,twoside,final]{report}
+\documentclass[12pt,openright,oneside,final]{report}
 \usepackage{generators/imports}
+\usepackage{tabulary}
+\usepackage{float}
+\usepackage{makecell}
+\usepackage{pdfpages}
+
+\restylefloat{table}
 \include{generators/glossary}
 \begin{document}
 \include{generators/frontpage} % This is the titlepage
@@ -12,9 +18,19 @@
 \include{generators/tableOfContentsAndListings}
 \pagenumbering{arabic}
 \setcounter{page}{1}
-\setlength{\parskip}{0.5cm plus4mm minus3mm}  
+\setlength{\parskip}{0.5cm plus4mm minus3mm}
+\setlength\parindent{0pt}
 
 \include{chapter/introduction}
+\include{chapter/Dangers}
+\include{chapter/Litrev}
+\include{chapter/methodologies}
+\include{chapter/requirements}
+\include{chapter/PrototypeDevelopment}
+\include{chapter/FeaturesOfApp}
+\include{chapter/Evaluation}
+\include{chapter/Discussion}
+\include{chapter/Conclusion}
 
 % Include more chapters as required.
 %%=========================================
@@ -36,4 +52,5 @@
   {\large}% <- font for title, default \Huge
 
 \include{generators/appendix-a}
+\include{generators/appendix-b}
 \end{document}
