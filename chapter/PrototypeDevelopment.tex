@@ -1,25 +1,48 @@
 \chapter{Prototype Development}
-This chapter presents the development tools that are used for designing and creating the prototype. The chapter also explains the iterations and methods that were used while prototyping.
+\section{Iteration overview}
+This chapter presents four design iterations and methods that were used while prototyping. The table below summaries the iterations and shows what methods were used and how the prototype was evaluated.
+{
+\begin{table}[H]
+\centering
+\hskip-1.5cm\begin{tabular}{ |l|l|l|l|l| }
+  \hline
+  \multicolumn{5}{|c|}{Overview of iterations} \\
+  \hline
+\makecell[l]{Iteration} &\makecell[l]{1}
+&\makecell[l]{2}
+&\makecell[l]{3}
+&\makecell[l]{4}\\ 
+\hline
+\makecell[l]{Define/Redefine} &\makecell[l]{Literature review\\ and survey}
+&\makecell[l]{Redefine after\\ expert interview}
+&\makecell[l]{Redefine after\\ focus group}
+&\makecell[l]{Redefine after\\ SUS with experts}
+\\ 
+\hline
+\makecell[l]{Fidelity} &\makecell[l]{Low}
+&\makecell[l]{Low-mid}
+&\makecell[l]{High}
+&\makecell[l]{High}
+\\ 
+\hline
+\makecell[l]{Method} &\makecell[l]{Interview with\\ experts}
+&\makecell[l]{Focus group \\ design principles}
+&\makecell[l]{Group survey}
+&\makecell[l]{SUS with experts}\\ 
+\hline
+\makecell[l]{Evaluate} &\makecell[l]{Evaluate with \\ experts}
+&\makecell[l]{Interview}
+&\makecell[l]{SUS with experts}
+&\makecell[l]{SUS with users \\heuristics with\\ experts}
+\\ 
+\hline
+\end{tabular}
+\label{Overview}
+\caption{Overview of design iterations}
+\end{table}
+}
 
-\section{Development tools}
-\subsection{Proto.io}
-Proto.io is an application prototyping platform \cite{proto} that can can simulate everything an app can do. That includes interactive touch gestures, screen transitions and animations. It allows users to create realistic, shareable prototypes that work as a real app should and experience their prototype on the actual device.
-\subsection{ReactJS}
-ReactJS is a javascript library for building user interfaces \cite{react}. It is a flexible and efficient front end javascript library for building user interfaces\cite{react2}. ReactJS is developed by Facebook and is used by a variety of websites and applications. 
 
-\subsection{Google forms}
-Google Forms is a tool that allows collecting information from users via a personalized survey or quiz. The information is then collected and automatically connected to a spreadsheet\cite{forms}. Google forms was used to create a survey that was shared on social media, which helped gather valuable information.
-\subsection{Atom}
-Atom is the text-editor that was used to code in for this project. With atom it is possible to import packages, have multiple panes, manage packages and helps you write code faster with a smart and flexible autocomplete \cite{atom}.   
-\subsection{Github}
-Github provides software development version control using git. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project \cite{github} . 
-
-\section{Iteration Overview}
-pilot survey test 
-survey (proof of concept / data analysis?)
-wireframe ( proto.io
-expert?
-redefine
 \section{First Iteration of Research Project}
 The first design iteration started with the requirements established from the literature review and a survey conducted through social media to gather data. The survey went through two pilot studies to establish the best way to get data and was shared on Facebook. The purpose of the survey was explained in the introduction, so that the people who answered knew what they were contributing to. They were shown an example of logging exercises \ref{fig:workout log} and were explained how a likert scale works. 44 people answered the survey.
 \begin{figure}[H]
@@ -64,13 +87,44 @@ Fitbit & 5\\
 \caption{Survey Activity Tracker}
 \end{table}
 
-They were asked to list what kind of data they think is interesting from the activity trackers, some of the answers are shown in figure \ref{data}. Most people answered that knowing the heart rate, average heart rate and max heart rate is important. Also the amount of daily steps, distance of a run, amount of sleep and performance analysis were listed. 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=120mm]{figures/puls.png}
-    \caption{Data from activity trackers}
-    \label{data}
-\end{figure}
+They were asked to list what kind of data they think is interesting besides logging workouts from the activity trackers and applications. Some of the answers are shown in the table below. Most people answered that knowing the heart rate, average heart rate and max heart rate is important. Also the amount of daily steps, distance of a run, amount of sleep and performance analysis were listed. 
+\begin{table}[H]
+\begin{tabular}{ |l|l| }
+  \hline
+  \multicolumn{2}{|c|}{Data from activity tracker} \\
+  \hline
+\makecell[l]{Norwegian} & \makecell[l]{English translation}\\ 
+\hline
+\makecell[l]{Distanse løpt/gått} & \makecell[l]{Distance run/walked}\\
+\hline
+\makecell[l]{Puls, tid og hastighet} & \makecell[l]{Heart rate, time and speed}\\ 
+  \hline
+\makecell[l]{Puls} & \makecell[l]{Heart rate} \\ 
+  \hline
+ \makecell[l]{Følge med om økten holder seg innenfor\\ mål satt før trening} & \makecell[l]{If the workout stays within the\\ pre-deterimined limits}\\ 
+  \hline
+  \makecell[l]{Puls, søvn, søvnforstyrrelse/urolig søvn,\\ skritt, kalorier, stigning/høydemeter} &
+  \makecell[l]{Heart rate,sleep, sleep disturbances, steps,\\ calories, climb/ascent/acclivity}\\ 
+  \hline
+   \makecell[l]{Puls, løpedistase og tid} & \makecell[l]{Heart rate,distance run and time}\\ 
+  \hline
+   \makecell[l]{Skritteller,søvn og trenings analyse} &\makecell[l]{ Steps, distance, sleep and workout analysis}\\ 
+  \hline
+   \makecell[l]{Antall skritt gått} & \makecell[l]{Daily steps}\\ 
+  \hline
+   \makecell[l]{Performance, energiforbruk, treningseffekt og\\ restitusjonstid} & \makecell[l]{Performance, energy spent,\\ training effect, recovery time}\\ 
+  \hline
+   \makecell[l]{Gjennomsnittspuls} & \makecell[l]{Average heart rate}\\ 
+  \hline
+   \makecell[l]{Makspuls} & \makecell[l]{Max heart rate}\\ 
+  \hline
+\end{tabular}
+\label{table:ActivityTrackerData}
+\caption{Data from activity trackers}
+\end{table}
+
+
+
 To get more knowledge about the surveyed people`s workout habits, they were asked if they logged their workouts seen in figure \ref{workoutlogging}. The majority answered they do not log their workouts.  From the 41.9 \% of people that log their workouts were asked if they do it after or during and 70\% of them do it after they are finished with the workout.
 
 \begin{figure}[H]
@@ -206,12 +260,18 @@ For the last part of the focus group the members were shown the current mid-fide
 
 They were then asked about design preferences, they all agreed that having intuitive user interface and to stay social was the most important part. They thought the buttons were intuitive enough so that they understood quickly what would happen.
 For the color preferences they agreed that light colors with dark text is the best option, and that it looked more professional without "aggressive screaming colors".
-\subsection{Reviewing design principles}
+\subsection{Design principles}
 In order to improve the prototype for testing, the five design principles were reviewed and integrated to the prototype design. For the visibility principle, text was added and replaced some of the content filler that was in "your workouts" and "your friends workouts", this added to the constraint and feedback principles as well as now it is easier to understand where in the application a user is and makes it harder to do mistakes.
 
-For the feedback principle the navigation buttons now show a transition to the button that was pressed and the button changes colour to blue and is slightly bigger than the other two as shown in figure \ref{GruppeAss1}. The design is also consistent over every screen of the application with the same background colours, images, navigation and font. The same goes for the affordance principle as there are common icons and the layout which is inspired from social media platforms which matches the industry.
+For the feedback principle the navigation buttons now show a transition to the button that was pressed and the button changes colour to blue and is slightly bigger than the other two as shown in figure \ref{GruppeAss1}. The design is also consistent over every screen of the application with the same background colours, images, navigation and font. The same goes for the affordance principle as there are common icons and the layout which is inspired from social media platforms which matches the industry
+
+
+\section{Third Iteration of Research Project}
+For the third iteration, the feedback from the focus group was implemented to the prototype. A visualisation bar was added to the group workout to represent the personal goal of the user, and both the personal and group goals are shown as well. 
+The prototype was evaluated by usability experts with SUS and a group survey.
+
 \subsection{SUS and survey with Usability Experts}
-The evaluation of the third design iteration was conducted by .. people. The usability experts were divided in to groups of two, three or four to get a feeling of the social aspect of the prototype. They were told about the previous iterations of the research project and answered a survey after doing the SUS analysis.
+The evaluation of the third design iteration was conducted by six people. The usability experts were divided in to groups of three to get a feeling of the social aspect of the prototype. They were told about the previous iterations of the research project and answered a survey after doing the SUS analysis.
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.6]{figures/GruppeAspekt1.png}
@@ -219,17 +279,56 @@ The evaluation of the third design iteration was conducted by .. people. The usa
     \label{GruppeAss1}
 \end{figure}
 
-The prototype \ref{GruppeAss1} was shown to the usability experts on a laptop screen with a responsive layout window of an iPhone X. The evaluating experts were guided through the prototype and explained the basic functionality of the application and how the social features would work. The experts had then a couple of minutes to click through the prototype and after they evaluated the prototype with SUS and a quick group survey.
+The prototype \ref{GruppeAss1} was shown to the usability experts on a laptop screen with a responsive layout window of an iPhone X. The evaluating experts consisted of six information science master students. They were guided through the prototype and explained the basic functionality of the application and how the social features would work. The experts had then a couple of minutes to click through the prototype and after they evaluated the prototype with SUS and a quick group survey.
+The first group gave an average score of 90,8 and the second group gave an average score of 93,3, which is considered as best imaginable. The score might be inflated as the evaluating experts know about the SUS from beforehand and wanted to be nice.
 
-SCORES+SURVEY
+\subsection{Group survey}
+Each group conducted a group survey about the functionality after completing the SUS. They were asked three questions that prompted a discussion. 
+Question 1: Is there any functionality that you and your group thinks is missing?
+\begin{itemize}
+    \item Group 1: Would love to have a graph showing the progression towards the personal goals.
+    Likes when the data is visualised, how much weight has been lifted in a gym session, how far you have run each workout and if there is progress.
+    \item Group 2: Being able to log diet and share what you have eaten today, having a caloric calculator and show how many calories you have approximately used per day. One of the members pointed out that the progress bar should be below the personal goal, and the green checkmark should be changed since it looked like the goal was completed.
+\end{itemize}
+
+Question 2: Would your group be interested in having a leaderboard in the group section that would show which member is working out the most each week or month?
+\begin{itemize}
+    \item Group 1: Yes to both, really think both would help motivate the group members and all of them thought that it would help them to stay more active.
+    \item Group 2: Yes, very motivating and would love to have a weekly rapport showing who is on top and what the members have done.
+\end{itemize}
+
+Question 3: Would you use a fitness application with the social functionality? ( Assuming your group of friends would too)
+\begin{itemize}
+    \item Group 1: Yes and "yes if I actually worked out or my friends guilted me into doing it"
+    \item Group 2: Yes absolutely, especially if our friends joined.
+\end{itemize}
 
 
-
-
-\section{Third Iteration of Research Project}
-For the third iteration, the feedback from the usability experts and focus group was implemented to the prototype. A group case study was conducted with three users to test and evaluate the prototype.
 \subsection{Redefining after feedback from usability experts}
-After the feedback from the usability experts and the focus group, stuff was implemented like a suggestion like something 
+After the feedback from the usability experts, a leaderboard was implemented to the prototype as well as a few design changes in the group section, the goal was moved above the progress bar, and the progress bar visualisation was changed so that the green checkmark only shows if the progress is complete, and the bar now is blue and shows that the goal is active.
 
 \section{Fourth Iteration of Research Project}
-\subsection{Why I did stuff}
+The fourth iteration of the prototype consisted of testing the prototype with two users. The users evaluated the prototype with SUS and a usability test. The prototype was evaluated by experts with Nielsen`s heuristics as well.
+
+\subsection{SUS with users}
+A SUS evaluation was conducted by two users that contributed to the survey and the usability testing after. The users are economy students and are regular users of fitness applications.
+They were shown the prototype on a laptop with iPhone X and were allowed to click around to test the functionality. The results were ..
+
+Additional feedback from the users .. 
+
+The results of the SUS can be seen in section \ref{susu} 
+
+\subsection{Usability testing with users}
+The participants of the usability test performed three different tests. The tests were performed on a laptop with iPhone X layout and were timed on every task they were given. The participants were already familiar with the prototype as they did the SUS before and had time to navigate it. The tests were.. did users make mistakes? .. The results are shown in section \ref{usat}
+
+\subsection{Heuristics with experts}
+Three usability experts were contacted to evaluate the prototype with Nielsen`s heuristics. The users were shown the high-fidelity prototype on a laptop with an iPhone X layout. The results are shown in section \ref{heur} .
+
+
+\section{Future iterations}
+??
+get data from fitness trackers & phones 
+commenting on workout logs
+
+
+
